@@ -70,6 +70,10 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     -- Set up custom filetypes
+    if vim.g.neovide then
+      vim.o.guifont = "JetBrainsMono Nerd Font:h13"
+      vim.g.neovide_cursor_vfx_mode = "railgun"
+    end
     -- vim.filetype.add {
     --   extension = {
     --     foo = "fooscript",
