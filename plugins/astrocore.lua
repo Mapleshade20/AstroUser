@@ -64,6 +64,9 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+
+        -- Maple Custom
+        ["<Leader>d"] = { ":cd %:p:h<CR>:pwd<CR>", desc = "Navigate here" },
       },
     },
   },
