@@ -5,14 +5,18 @@
 return {
 
   -- == Examples of Adding Plugins ==
-
   -- "andweeb/presence.nvim",
   -- {
   --   "ray-x/lsp_signature.nvim",
   --   event = "BufRead",
   --   config = function() require("lsp_signature").setup() end,
   -- },
-  "gbprod/cutlass.nvim",
+
+  {
+    "gbprod/cutlass.nvim",
+    lazy = false,
+    config = true,
+  },
 
   {
     "CRAG666/code_runner.nvim",
@@ -36,7 +40,6 @@ return {
   {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = {},
   },
   -- == Examples of Overriding Plugins ==
 
