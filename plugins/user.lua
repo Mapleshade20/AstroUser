@@ -16,6 +16,9 @@ return {
     "gbprod/cutlass.nvim",
     lazy = false,
     config = true,
+    opts = {
+      cut_key = "m",
+    },
   },
 
   {
