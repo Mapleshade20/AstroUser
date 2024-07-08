@@ -66,7 +66,7 @@ return {
         -- ["<C-S>"] = false,
 
         -- Maple Custom
-        ["<Leader>d"] = { ":cd %:p:h<CR>:pwd<CR>", desc = "Navigate here" },
+        ["<Leader>fd"] = { ":cd %:p:h<CR>:pwd<CR>", desc = "Change dir" },
       },
     },
   },

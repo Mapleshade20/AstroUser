@@ -10,4 +10,5 @@ return {
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
   { import = "astrocommunity.recipes.neovide" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
 }
