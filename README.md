@@ -2,6 +2,8 @@
 
 location: `~/.config/nvim/lua/`
 
+Manually install in Mason: goimports_reviser, gofumpt
+
 try: 
 
 ```
