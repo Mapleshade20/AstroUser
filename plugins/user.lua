@@ -36,6 +36,7 @@ return {
       focus = false,
       filetype = {
         python = "python -u",
+        go = { "cd $dir ;", "go mod tidy;", "go run $dir" },
       },
     },
   },
