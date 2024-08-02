@@ -26,9 +26,14 @@ return {
     cmd = "RunCode",
     keys = {
       {
-        "<leader>r",
+        "<leader>rr",
         "<cmd>RunCode<cr>",
-        desc = "Run Code!",
+        desc = "Run Current",
+      },
+      {
+        "<leader>rb",
+        "<cmd>!go mod tidy && go build .<cr>",
+        desc = "Build Current",
       },
     },
     opts = {
