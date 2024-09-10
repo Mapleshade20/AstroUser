@@ -9,6 +9,7 @@ return {
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
   { import = "astrocommunity.recipes.neovide" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },

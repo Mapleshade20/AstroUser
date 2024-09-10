@@ -22,31 +22,6 @@ return {
   },
 
   {
-    "CRAG666/code_runner.nvim",
-    cmd = "RunCode",
-    keys = {
-      {
-        "<leader>rr",
-        "<cmd>RunCode<cr>",
-        desc = "Run Current",
-      },
-      {
-        "<leader>rb",
-        "<cmd>!go mod tidy && go build .<cr>",
-        desc = "Build Current",
-      },
-    },
-    opts = {
-      mode = "toggleterm",
-      focus = false,
-      filetype = {
-        python = "python -u",
-        go = { "cd $dir ;", "go mod tidy;", "go run $dir" },
-      },
-    },
-  },
-
-  {
     "kylechui/nvim-surround",
     event = "BufEnter",
     config = true,
