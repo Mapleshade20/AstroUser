@@ -37,7 +37,7 @@ return {
     filetype = {
       python = "python -u",
       go = { "cd $dir ;", "go mod tidy;", "go run $dir" },
-      cpp = { "cd $dir ;", "g++ -o %:p:r.bin $file ;", "%:p:r.bin" },
+      cpp = { "cd $dir ;", "g++-11 -o %:p:r.bin $file ;", "%:p:r.bin" },
     },
   },
 }
