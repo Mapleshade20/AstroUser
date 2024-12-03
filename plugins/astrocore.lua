@@ -30,6 +30,8 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = true, -- sets vim.opt.wrap
+        -- shiftwidth = 4,
+        -- tabstop = 4,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
@@ -60,7 +62,7 @@ return {
 
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
-        ["<Leader>r"] = { desc = " Execute" },
+        ["<Leader>r"] = { "", desc = " Execute" },
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
