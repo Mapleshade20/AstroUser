@@ -62,16 +62,6 @@ return {
     end,
   },
 
-  -- {
-  --   "folke/tokyonight.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {
-  --     style = "night",
-  --     transparent = true,
-  --   },
-  -- },
-
   {
     "karb94/neoscroll.nvim",
     opts = {},
@@ -93,6 +83,14 @@ return {
   },
 
   -- == Overriding Default Plugins ==
+
+  {
+    "L3MON4D3/LuaSnip",
+    config = function()
+      local config_path = "~/.config/nvim/lua/plugins/LuaSnip/"
+      require("luasnip.loaders.from_lua").lazy_load { paths = { config_path } } -- WARNING: fails on Windows
+    end,
+  },
 
   {
     "nvim-neo-tree/neo-tree.nvim",
