@@ -11,21 +11,21 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "astrodark",
-    style = {
-      transparent = true,
-      float = false,
-      neotree = false,
-      inactive = false,
-    },
-    -- terminal_color = false,
+    colorscheme = "catppuccin",
+    -- style = {
+    -- transparent = true,
+    -- float = false,
+    -- neotree = false,
+    -- inactive = false,
+    -- },
+    -- terminal_color = true,
 
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
       init = { -- this table overrides highlights in all themes
-        Normal = { bg = "NONE", ctermbg = "NONE" },
-        NeoTreeNormal = { bg = "NONE", ctermbg = "NONE" },
-        NeoTreeNormalNC = { bg = "NONE", ctermbg = "NONE" },
+        -- Normal = { bg = "NONE", ctermbg = "NONE" },
+        -- NeoTreeNormal = { bg = "NONE", ctermbg = "NONE" },
+        -- NeoTreeNormalNC = { bg = "NONE", ctermbg = "NONE" },
       },
       astrodark = { -- a table of overrides/changes when applying the astrotheme theme
         -- Normal = { bg = "NONE" },
