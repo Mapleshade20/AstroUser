@@ -64,6 +64,7 @@ return {
 
   {
     "karb94/neoscroll.nvim",
+    config = true,
     opts = {},
   },
 
@@ -78,6 +79,12 @@ return {
 
   {
     "kylechui/nvim-surround",
+    event = "BufEnter",
+    config = true,
+  },
+
+  {
+    "windwp/nvim-ts-autotag",
     event = "BufEnter",
     config = true,
   },

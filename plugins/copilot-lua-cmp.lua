@@ -1,7 +1,17 @@
 return {
   "zbirenbaum/copilot.lua",
   specs = {
-    { import = "astrocommunity.completion.copilot-lua" },
+    {
+      "zbirenbaum/copilot.lua",
+      cmd = "Copilot",
+      event = "User AstroFile",
+      opts = {
+        suggestion = { auto_trigger = true, debounce = 150 },
+        filetypes = {
+          html = false,
+        },
+      },
+    },
     {
       "hrsh7th/nvim-cmp",
       dependencies = { "zbirenbaum/copilot.lua" },
